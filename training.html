@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P16163077</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css"> <!--this font awesome stylesheet is required to display the instagram and twitter logo-->
+</head>
+<body>
+
+  <header class="navbar">
+      <img class="logo" src="img/logo.png" alt="logo">
+      <a class="nav-link" href="index.html">HOME</a>
+      <a class="nav-link" href="training.html">TRAINING</a>
+      <a class="nav-link" href="blog.html">BLOG</a>
+      <a class="nav-link" href="contact.html">CONTACT</a>
+  </header>
+
+
+  <!-- Main Area -->
+  <main id="main">
+    <!-- Section One (Banner) -->
+    <section id="section-one" class="grid">
+      <iframe class="video" src="https://www.youtube.com/embed/aEb_YaEZ5-s" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </section>
+
+    <!-- Section Two (Options) -->
+    <section id="section-two" class="grid">
+      <h1>Training Gallery</h1>
+
+      <div class="row">
+        <div class="column">
+            <img class="img-grid" src="img/img1.png" alt="img">
+            <img class="img-grid" src="img/img2.png" alt="img">
+          </div>
+          <div class="column">
+            <img class="img-grid" src="img/img3.png" alt="img">
+            <img class="img-grid" src="img/img4.png" alt="img">
+          </div>
+          <div class="column">
+            <img class="img-grid" src="img/img5.png" alt="img">
+            <img class="img-grid" src="img/img6.png" alt="img">
+          </div>
+          <div class="column">
+            <img class="img-grid" src="img/img7.png" alt="img">
+            <img class="img-grid" src="img/img8.png" alt="img">
+        </div>
+      </div>
+  </section>
+
+
+
+    <section id="section-three" class="grid">
+      <h1> Training Split </h1>
+
+      <button type="button" class="dropdown"> Chest </button> <!-- button spanning the width of the screen top create dropdown effect when selected -->
+      <div class="content"> <!-- div element for dropdown text to go inside -->
+        <p>Flat Bench Press 3 x10 <br>
+          Chest Dumbbell Flys 5 x 20 <br>
+          Push Ups 5 x 20 <br>
+          Incline Chest Machine 5 x 20 <br>
+          Chest Flys 5 x 20 <br>
+        </p>
+      </div>
+
+      <button type="button" class="dropdown"> Back </button>
+      <div class="content">
+        <p>Deadlifts 3 x 8 <br>
+          Lat Pulldowns 3 x 10 <br>
+          Pull Ups 5 x 20 <br>
+          Incline Dumbbell Machine 5 x 20 <br>
+          Dumbbell Pullovers 2 x 20 <br>
+        </p>
+      </div>
+
+      <button type="button" class="dropdown"> Legs </button>
+      <div class="content">
+        <p>Squats 5 x 5 <br>
+          Leg Extensions 5 x 20 <br>
+          Barbell Lunges 5 x 5 <br>
+          Leg Press 5 x 20 <br>
+        </p>
+      </div>
+
+      <button type="button" class="dropdown"> Shoulders </button>
+      <div class="content">
+        <p>Standing Barbell Shoulder Press 3 x 10 <br>
+          Side Raises 8 x 20 <br>
+          Rear Delt Flys 6 x 20 <br>
+          Shrugs 2 x 20 <br>
+        </p>
+      </div>
+
+      <button type="button" class="dropdown"> Arms </button>
+      <div class="content">
+        <p>Seated Dumbbell Curls 10 x 10 <br>
+          Tricep Extensions 15 x 20 <br>
+          Hammer Curls 5 x 20 <br>
+          Skull Crushers 7 x 12 <br>
+        </p>
+
+      <script src="js/dropdown.js"></script>
+    </section>
+    <!-- Wiki Search -->
+    <section id="section-four" class="grid">
+  <h1>Find Out More</h1>
+
+  <form id="searchForm">
+    <label for="wikiQuery">Search Wikipedia to find out why nutrition and training is an important factor to your health: </label>
+    <input id="wikiQuery" type="text" placeholder="Enter Search">
+    <input type="submit">
+  </form>
+
+  <ul id="demo"></ul>
+
+  <script src="js/wiki.js"></script>
+</section>
+
+
+
+    <!-- Footer -->
+    <!-- simple footer with socia media linked to the font awsome text icons -->
+    <footer id="footer" class="grid">
+      <div class="socials">
+        <a href="mailto:shaf@gmail.com"><i class="fas fa-envelope"></i></a> <!-- mailto: is used to send an email directly when selecting the envelope item -->
+        <a href="tel:07534786647"><i class="fas fa-phone"></i></a> <!-- tel: is used to send an email directly when selecting the envelope item -->
+        <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+        <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

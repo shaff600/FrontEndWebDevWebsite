@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P16163077</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css"> <!--this font awesome stylesheet is required to display the instagram and twitter logo-->
+</head>
+<body>
+
+  <header class="navbar">
+      <img class="logo" src="img/logo.png" alt="logo">
+      <a class="nav-link" href="index.html">HOME</a>
+      <a class="nav-link" href="training.html">TRAINING</a>
+      <a class="nav-link" href="blog.html">BLOG</a>
+      <a class="nav-link" href="contact.html">CONTACT</a>
+  </header>
+
+
+
+  <!-- Main Area -->
+  <main id="main">
+    <!-- Section One (Banner) -->
+
+    <!-- Section Two (Options) -->
+    <section id="section-two" class="grid">
+      <div class="overlay-enq">
+        <h1> Book Consultation</h1>
+        <p>As a personal trainer, it's always important to get to know your prospective clients as much as possible before determining that they'd be a good fit for services provided. Please fill out the enquiry form below detailing any health issues, diet preferences, current activity level and overall body compostion goal.</p>
+          <div class="contact-form">
+
+              <form id="getName" action="#" method="post">
+
+                <label for="userName">Enter Name:</label>
+                <input id="userName" type="text"  placeholder="Name" required>
+
+                <label for="email">Email Address</label>
+                <input id="email" class="form-control" name="email" type="email" placeholder="Enter email" required>
+
+                <label for="subject">Your Enquiry</label>
+                <textarea id="subject" class="form-control"  name="content" rows="10" required placeholder="Enter your enquiry"></textarea> <!-- row 10 is used to increase the height of the text area -->
+
+                <input type="submit"> <!-- Submit form button, used inside form tags to make JavaScript data entry work-->
+            </form>
+
+            <h1>Thank you <span id="my-name"></span> for visiting our site!</h1>
+
+            <script src="js/submit.js"></script>
+
+          </div>
+      </div>
+    </section>
+
+
+    <section id="section-three" class="grid">
+      <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.4408131731952!2d-1.5108231844617648!3d52.41681005162427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48774b9638d696e9%3A0xcf64cff1e17c3f45!2sBodymasters%20Gym!5e0!3m2!1sen!2suk!4v1583072437147!5m2!1sen!2suk"  allowfullscreen=""></iframe>
+    </section>
+
+
+    <!-- Footer -->
+    <!-- simple footer with socia media linked to the font awsome text icons -->
+    <footer id="footer" class="grid">
+      <div class="socials">
+        <a href="mailto:shaf@gmail.com"><i class="fas fa-envelope"></i></a> <!-- mailto: is used to send an email directly when selecting the envelope item -->
+        <a href="tel:07534786647"><i class="fas fa-phone"></i></a> <!-- tel: is used to send an email directly when selecting the envelope item -->
+        <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+        <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

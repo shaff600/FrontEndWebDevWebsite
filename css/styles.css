@@ -1,0 +1,518 @@
+/* MOBILE AND GLOBAL STYLES */
+
+/* applies to screens smaller than 500px (first breakpoint) */
+/* and above unless overwritten below */
+
+/* this applys to the whole webpage */
+* {
+  box-sizing: border-box;
+}
+
+/*this applys to the body*/
+body {
+  background: #391b21;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: #8EF101;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+}
+
+p {
+  color: white;
+  text-align: center;
+}
+
+
+/* ------------------------------- Nav Bar ------------------------------- */
+header {
+  display: flex;
+  justify-content: center; /* display text in the center of the header section as close as possible to one another */
+  /*background-color: #efefef;*/
+  background-color: transparent;
+}
+
+header a {
+  padding-top: 25px; /* padding em used to auto resize padding based on resolution */
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #8EF101;
+  text-decoration: none; /* remove underlines from hyperlinked text */
+}
+
+header a:hover {
+  color: #8EF101; /* when hovering over the tags make the text light grey */
+}
+
+.nav-link a {
+  color: #8EF101; /* when hovering over the tags make the text light grey */
+}
+
+.logo {
+  width: 150px;
+  height: 70px;
+}
+
+
+
+
+
+/* -------------------------- Banner --------------------------*/
+/* make the main image full width and span the screen */
+.banner {
+  width: 100%;
+}
+
+/* set one row for div element for the banner*/
+.row-banner {
+  background-color: #efefef; /* colour */
+  margin-left: 60px; /* set the spacing of the margins to position and lign content of the div */
+  margin-right: 60px;
+  margin-top: -40px; /* -35px used to move the div element up to cover half of the banner image to create the banner footer effect */
+  padding-top: 15px;
+}
+
+/* float all four columns side by side to display content all in one row */
+.column-banner {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+.row-banner {
+  /*opacity: 0.8;*/
+  border-radius: 10px;
+  background-color: #8EF101;
+}
+
+/* font awesome colour and font size settings */
+.fa-weight,
+.fa-running,
+.fa-swimmer,
+.fa-dumbbell {
+    color: white;
+    font-size: 1.2em;
+}
+
+
+
+
+
+/* ------------------------------ Column Cards ----------------------------- */
+/* set the first column card for the services to add a top margin to seperate it from the previous section */
+.column-card-top {
+  width: 100%;
+  display: block; /* block element used to fill entire line */
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+/* set the other two column cards for the services */
+.column-card {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* remove extra margins */
+.row-card {
+  margin: 0px;
+}
+
+/* set styles to the column cards */
+.card {
+  padding: 20px;
+  text-align: center;
+  background-color: #a9a9a9;
+  border-radius: 10px; /* this is used to curve the edges on the css cards */
+}
+
+
+
+
+
+/* -------------------------- CSS Grid - image and text --------------------------*/
+/* display the text and image on two seperate rows */
+/* set the first column to span the full width of the screen */
+.column-img {
+  width: 100%;
+}
+
+/* set the image to the full width of the column so it does not leak of the screen */
+.image {
+  width: 100%;
+}
+
+/* set the second column to span the full width of the screen */
+.column-text {
+  width: 100%;
+}
+
+
+
+
+
+/* ---------------------------- Video -----------------------------*/
+.video {
+  width: 100%;
+  height: 500px;
+  border: none;
+}
+
+
+
+
+/* ---------------------------- SLideshow -----------------------------*/
+.slide-img {
+  width: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+/* ----------------------------- Image Grid -------------------------------- */
+/* The grid: Four equal columns that floats next to each other */
+#image-grid {
+  margin-bottom: 10px;
+}
+
+.column {
+  flex: 100%;
+  max-width: 100%;
+}
+
+.img-grid {
+  width: 100%;
+}
+
+
+
+
+
+/* --------------------------------- Collapsable -----------------------------*/
+.dropdown {
+  background-color: #a9a9a9;
+  color: white;
+  padding: 15px; /* spacing for the header bar for the dropdown */
+  width: 100%; /* span the dropdown full width of the page */
+  text-align: left; /* align the heading to the left of the div */
+  font-size: 15px;
+  margin-top: 10px; /* add space between each dropdown menu */
+}
+
+.active, .dropdown:hover {
+  background-color: #555; /*display darker background colour on hover and once the dropdown menu has been selected */
+  transition: 1s;
+}
+
+.content {
+  padding-left: 15px;
+  display: none; /* hide the dropdown text box if not selected */
+  background-color: #a9a9a9;
+}
+
+
+
+
+
+/* -------------------------------- Wiki Search --------------------------------*/
+ul {
+  list-style-type: none;
+  display: table;
+  width: 100%;
+  /*border-spacing: 0px;*/
+}
+
+li {
+  display: table-row;
+}
+
+li strong, li .txt {
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  width: 20%;
+  padding-left: 30px;
+}
+
+li .txt {
+  width: 80%;
+  padding: 30px;
+  color: white;
+}
+
+li:nth-child(even) {
+  background: #a9a9a9;
+  color: white;
+}
+
+
+
+
+
+/* ----------------------- Contact --------------------------*/
+.contact-form {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+label {
+  color: white;
+}
+
+::placeholder {
+  color: #000;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px; /* add space after each input section */
+  border-radius: 10px;
+}
+
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px; /* add space after each input section */
+  border-radius: 10px;
+}
+
+input[type=submit] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px; /* add space after each input section */
+  border-radius: 10px;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.btn:hover{
+  color: white;
+  background-color: transparent;
+}
+
+
+
+
+
+
+/* ---------------------------- Maps -----------------------------*/
+.maps {
+  width: 100%;
+  height: 500px;
+  border: none;
+}
+
+
+
+
+
+/* --------------------------------- Footer --------------------------------- */
+#footer {
+  padding: 1em; /* set padding to resize automatically using em */
+  background: #7DC236;
+  color: #000;
+  text-align: center;
+}
+
+/* align the font awesome icons in the middle of the div element */
+.socials {
+  text-align: center;
+  padding: 10px;
+}
+
+.socials a {
+  text-decoration: none; /* remove the underlines from the hyperlinks */
+  margin: 10px;
+  align-items: center;
+  font-size: 30px;
+  text-align: center;
+  padding: 8px; /* padding between the icons */
+}
+
+/* font awesome colour and font size settings */
+.fa-twitter,
+.fa-instagram,
+.fa-envelope,
+.fa-phone {
+    color: white;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+/* font awesome colour and font size settings */
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-envelope:hover,
+.fa-phone:hover {
+  transform: rotate(360deg);
+  color: #a9a9a9;
+}
+
+
+
+
+
+
+/* -------------------------------- css grid --------------------------------*/
+/* set the paragraph colour and font size only for section one */
+#section-one {
+  font-size: 1em; /* em font size used to auto resize text in comparison to the screen size*/
+}
+
+#section-two {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#section-three {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+
+#section-four {
+  padding: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 0px; /*distance betwee eac section of the grid*/
+  grid-template-areas:
+    "header  header  header"
+    "main  main  main"
+    "footer  footer"
+}
+
+/* Declare each grid section*/
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+
+
+
+
+/* TABLET STYLES */
+@media screen and (min-width: 699px) {
+  /* applies to screens wider than 699px */
+  header {
+    justify-content: space-between; /*span the text as far apart on desktop */
+  }
+
+  /* float the columns side by side once the screen is bigger than 699 (on tablet and desktop) */
+  .column-card {
+    float: left; /* position the litems towrds the left */
+    width: 33.3%; /* set the width so all three columns are displayed side by side */
+    padding: 10px; /* set the padding of the distance between each column */
+    margin-top: 50px; /* margins from the top of the column car to the previous section */
+  }
+
+  .column-card-top {
+    float: left;
+    width: 33.3%;
+    padding: 10px;
+    margin-top: 50px;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+}
+
+
+
+
+
+/* DESKTOP STYLES */
+/* applies to screens wider than 999px */
+@media screen and (min-width: 999px) {
+
+  /* split column one and two in half to display them both on the sam erow on deskptop screens */
+  .column-img {
+    width: 50%;
+    padding-right: 10px;
+  }
+
+  .column-text {
+    width: 50%;
+    padding-left: 10px;
+  }
+
+  /* display as a flex box to arrange the columns */
+  .row-img {
+    display: flex; /* used to create a flex container */
+    flex-wrap: wrap; /* wrap the objects */
+  }
+}

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P16163077</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css"> <!--this font awesome stylesheet is required to display the instagram and twitter logo-->
+</head>
+<body>
+
+  <header class="navbar">
+    <img class="logo" src="img/logo.png" alt="logo">
+    <a class="nav-link" href="index.html">HOME</a>
+    <a class="nav-link" href="training.html">TRAINING</a>
+    <a class="nav-link" href="blog.html">BLOG</a>
+    <a class="nav-link" href="contact.html">CONTACT</a>
+  </header>
+
+
+  <!-- Main Area -->
+  <main id="main">
+    <!-- Section One (Banner) -->
+
+    <section id="section-one" class="grid">
+      <img class="banner" src="img/banner.png" alt="">
+
+      <!-- here i created a css flexbox with four columns on one row to display icons and short headings to introduce the viewer to what i have to offer for personal training -->
+      <div class="row-banner"> <!-- start the row inside the div -->
+        <div class="column-banner"> <!-- start the first column inside the div -->
+          <i class="fas fa-weight"></i> <!-- font awesome text icon, linked to font awsome styles sheet -->
+          <p>Weight Loss</p> <!-- short heading text -->
+        </div> <!-- end the first column within the row -->
+
+        <div class="column-banner">
+          <i class="fas fa-dumbbell"></i>
+          <p>Training</p>
+        </div>
+
+        <div class="column-banner">
+          <i class="fas fa-swimmer"></i>
+          <p>Best Services</p>
+        </div>
+
+        <div class="column-banner">
+          <i class="fas fa-running"></i>
+          <p>Real Results</p>
+        </div>
+      </div> <!-- end the row inside the div -->
+    </section>
+
+
+    <!-- Section Two (Options) -->
+    <section id="section-two" class="grid">
+      <!-- responsive css column grid cards -->
+      <div class="row-card"> <!-- start the row for the column cards -->
+        <div class="column-card-top"> <!-- start the column for the first/top column card -->
+          <div id="card" class="card"> <!-- div element to create the card box  -->
+            <h3>Getting Started</h3>
+            <p>When you’re new to the gym it can be a daunting place. Not only are you going somewhere to deliberately make yourself physically uncomfortable, there’s the worry of being judged by other, apparently more capable gym-goers for somehow doing the gym wrong. We work with dedicated Personal Trainers who provide support throughout your fitness journey.</p>
+          </div> <!-- close the div element for the card box -->
+        </div> <!-- end the column for the first/top column card -->
+
+        <div class="column-card">
+          <div class="card">
+            <h3>Meal Plans</h3>
+            <p>Health benefits of meal planning. Whether you're trying to lose weight, or just improve your diet, meal planning is an easy step to help you reach your goals. There are numerous advantages of planning out your meals in advance that can not only save your waistline, but also improve your health. We offer Meal Plans based of your fitness needs.</p>
+          </div>
+        </div>
+
+        <div class="column-card">
+          <div class="card">
+            <h3>Training Plans</h3>
+            <p>Working out with consistency is important for achieving fitness results. Creating a workout plan will help you to achieve greater consistency. A commitment to a regular workout regimen will increase your fitness level, improve your health and generate a greater sense of mental well being. Personal Trainers with a vaired training background can help you meet your fitness goals </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Section Two (About Me) -->
+    <section id="section-three" class="grid">
+      <h1>Consistency</h1>
+
+      <!-- responsive text and image row (on mobile the image will be above the text, on desktop they will be side by side) -->
+      <div class="row-img">
+        <div class="column-img">
+          <img class="image" src="img/banner.png" alt="">
+        </div>
+        <div class="column-text">
+          <p>A consistent workout regimen reduces stress and increases your mental well being. When you work out regularly, your body releases endorphins that enhance your mood. You have probably experienced these positive feelings after finishing a cardiovascular workout. You might also find that when you go for days or weeks of not exercising, your energy level decreases and your mood is not as heightened.
+
+Sticking to a regular exercise regimen will keep you feeling revived both physically and mentally. When you exercise with consistency, your muscles will develop gradually and your mind will experience reduced levels of stress and greater relaxation.</p>
+          <p id="gains">Click me for more gains!</p>
+          <script src="js/onClick.js"></script>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <!-- simple footer with socia media linked to the font awsome text icons -->
+    <footer id="footer" class="grid">
+      <div class="socials">
+        <a href="mailto:shaf@gmail.com"><i class="fas fa-envelope"></i></a> <!-- mailto: is used to send an email directly when selecting the envelope item -->
+        <a href="tel:07534786647"><i class="fas fa-phone"></i></a> <!-- tel: is used to send an email directly when selecting the envelope item -->
+        <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+        <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
