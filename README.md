@@ -83,4 +83,3 @@ each functions do and understood how these can fit into my current form.
 
 Future Development:
 - From the concepts covered within this module I am eager to learn more about web development. During my placement year I was working more with the back-end of applications, this module helped to expose all the fundamentals of the front-end. As a result of demonstrating my work to friends, I have managed to convince them for me to make them a website! These website range from; information websites for a Garage contact hub, Make Up Artist contact me site, food blogger website.
-- I am also excited to further develop JavaScript knowledge as I have come across projects that require solid knowledge of DOM manipulation. As my graduate role focuses on back-end development (Python, Java) I will be spending my summer studying the theory and creating side projects.
